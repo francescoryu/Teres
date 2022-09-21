@@ -20,23 +20,12 @@ def start_selected_progress():
     SoccerTicker.soccer_ticker()
 
 
-
 def loading_effect():
-    sys.stdout.write("\r|-         |")
-    time.sleep(round(random.uniform(0.99, 1.33), 2))
-    sys.stdout.write("\r|---       |")
-    time.sleep(round(random.uniform(0.99, 1.33), 2))
-    sys.stdout.write("\r|----      |")
-    time.sleep(round(random.uniform(0.99, 1.33), 2))
-    sys.stdout.write("\r|------    |")
-    time.sleep(round(random.uniform(0.99, 1.33), 2))
-    sys.stdout.write("\r|--------  |")
-    time.sleep(round(random.uniform(0.99, 1.33), 2))
-    sys.stdout.write("\r|--------- |")
-    time.sleep(round(random.uniform(0.99, 1.33), 2))
-    sys.stdout.write("\r|----------|\n")
-    time.sleep(1)
-    sys.stdout.write("Done\n")
+    for cntr in range(91):
+        converted_cntr = str(cntr)
+        sys.stdout.write("\r-----------------" + converted_cntr + "min played-----------------")
+        sleep_after_interaction(0.15)
+        cntr + 1
 
 
 def welcome_print(s):
