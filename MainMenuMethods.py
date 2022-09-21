@@ -21,7 +21,7 @@ def start_selected_progress():
         print("___________________________________")
         sleep_after_interaction(0.2)
         print("|1 for random number\n"
-              "|2 for the current date and time\n"
+              "|2 for current date and time\n"
               "|3 to open google\n"
               "|4 to exit")
         sleep_after_interaction(0.2)
